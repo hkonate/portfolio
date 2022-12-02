@@ -1,10 +1,328 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&family=Rock+Salt&family=Rubik+Dirt&family=Rubik+Microbe&family=Titan+One&display=swap");
+* {
+  scrollbar-width: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.App-logo {
+  height: 300px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.dark {
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.salutation-box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.projectTitle {
+  font-family: "Monoton", cursive;
+}
+h1,
+h2 {
+  font-family: "Monoton", cursive;
+}
+
+.salutation-box > h1 {
+  font-size: 30vw;
+}
+.react-logo-box {
+  width: 40%;
+}
+.infosBox {
+  height: 100vh;
+}
+
+.projectAnnoncement {
+  font-size: 3vw;
+  line-height: 101vh;
+}
+.white {
+  background-color: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-size: 4vw;
+  color: #333;
+  cursor: default;
+  text-align: center;
+  line-height: 108.1vh;
+}
+.jobTitleContainer {
+  line-height: 100vh;
+}
+.jobTitle {
+  font-size: 4vw;
+  line-height: 108.1vh;
+  cursor: default;
+}
+
+.projects {
+  flex-direction: column;
+  gap: 30vh;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  overflow: scroll;
+  padding: 0px 100px;
+}
+.overflowScroll {
+  overflow-y: scroll;
+}
+.projectRev {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0px 100px;
+}
+
+.projectDetail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.projectTitle {
+  font-size: 7vw;
+  color: white;
+}
+
+.projectDesc {
+  font-size: 20px;
+  color: #555;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.projectButton {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #555;
+  border-radius: 10px;
+  color: #555;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.projectButton:hover {
+  transition: 2s;
+  border-color: white;
+}
+
+.projectButton::after {
+  content: "View Demo";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #222;
+  font-weight: bold;
+}
+
+.projectButton:hover.projectButton::after {
+  transform: translateX(100%);
+}
+
+.laptop {
+  width: 600px;
+  height: 379px;
+  flex: 1;
+  position: relative;
+}
+
+.laptopScreen {
+  width: 451px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 68px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.laptopApp {
+  width: 100%;
+}
+
+.wrapper div {
+  height: 3px;
+  width: 3px;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+
+.wrapper div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+.githubContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #111;
+}
+
+.githubTitle {
+  font-size: 100px;
+  color: white;
+}
+
+.githubChart {
+  width: 820px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dates {
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  background-color: #171c25;
+  border-radius: 2px;
+  transition: 3s all ease;
+}
+
+.active:nth-child(4n) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n + 1) {
+  background-color: #195b2c;
+}
+.githubChart:hover .active:nth-child(2n) {
+  background-color: #063f24;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,21 +331,44 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 1024px) {
+  .projects {
+    padding: 0 30px;
+    text-align: center;
+  }
 
-.App-link {
-  color: #61dafb;
-}
+  .project {
+    flex-direction: column;
+    height: max-content;
+  }
+  .projectRev {
+    flex-direction: column;
+    height: max-content;
+  }
 
+  .laptop {
+    transform: none !important;
+  }
+
+  .githubChart {
+    display: none;
+  }
+
+  .githubTitle {
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  .githubSm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    font-size: 30px;
+    text-align: center;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
